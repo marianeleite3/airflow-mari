@@ -19,3 +19,10 @@ helm: https://helm.sh/
 * Clone this repository
 * With a Kubernetes cluster and nodes properly configured and acessible with kubectl, run the `.\deploy.sh` in this directory
 * After running, the Airflow Web UI will be accessible on `http://localhost:8080.`
+
+
+  For the DAG running inside the application, it was used GCP for storage, the file was read from the link and uploaded into a bucket.
+  The file inside the bucket looks like this:
+  ![image](https://github.com/marianeleite3/airflow-mari/assets/87588343/cc3a29de-0498-43f9-bae1-4a9c11ada025)
+
+ 
