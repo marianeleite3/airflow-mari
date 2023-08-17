@@ -32,7 +32,6 @@ client = storage.Client(credentials=credentials)
 
 def upload_to_storage():
 
-    # Download the file
     url = 'https://ifood-data-architect-test-source.s3-sa-east-1.amazonaws.com/consumer.csv.gz'
     response = requests.get(url)
     if response.status_code == 200:
@@ -56,7 +55,6 @@ def print_content():
     print("File Content:")
     print(downloaded_content)
 
-# Define your default_args
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -67,7 +65,6 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-# Create a DAG instance
 dag = DAG(
     'dag_mari',
     default_args=default_args,
