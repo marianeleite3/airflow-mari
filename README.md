@@ -16,5 +16,6 @@ kubectl: https://kubernetes.io/docs/reference/kubectl/kubectl/
 helm: https://helm.sh/
 
 ### How to deploy:
+* Clone this repository
 * With a Kubernetes cluster and nodes properly configured and acessible with kubectl, run the `.\deploy.sh` in this directory
 * After running, the Airflow Web UI will be accessible on `http://localhost:8080.`
