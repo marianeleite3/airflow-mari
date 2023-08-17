@@ -1,6 +1,6 @@
 # airflow-mari
 
-This is the repository for deploying airflow in kubernetes.
+This is the repository for deploying airflow on kubernetes.
 -----
 How was it made:
 * For a custom airflow image with instalation of required libraries a custom docker image was built, the image can be found in dockerhub: https://hub.docker.com/repository/docker/mareleite3/airflow/general
