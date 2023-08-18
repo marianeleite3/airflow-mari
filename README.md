@@ -6,7 +6,7 @@ How was it made:
 * For a custom airflow image with instalation of required libraries a custom docker image was built, the image can be found in dockerhub: https://hub.docker.com/repository/docker/mareleite3/airflow/general
   
 * The local development was done using KinD: https://kind.sigs.k8s.io/docs/user/quick-start/
-* The oficial Helm chart was used for setting up the application with the built image, during the development, it was also deployed local persistent volumes. The Dags are updated via git_sync parameter and the image is using the Kubernetes executor
+* The oficial Helm chart was used for setting up the application with the built image. The Dags are updated via git_sync parameter and the image is using the Kubernetes executor
 
 ----
 Requirements:
