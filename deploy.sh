@@ -2,7 +2,7 @@
 helm repo add apache-airflow https://airflow.apache.org
 helm repo update
 
-helm upgrade --install airflow apache-airflow/airflow --namespace airflow --create-namespace --timeout 10m
+kubectl create namespace airflow 
 
 helm upgrade --install airflow apache-airflow/airflow -n airflow -f charts/values.yaml
 
